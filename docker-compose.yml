@@ -11,7 +11,7 @@ services:
       - PGID=1000
       - TZ=America/Chicago
     volumes:
-      - ${CONFIG_PATH}/filezilla:/config
+      - ${CONFIG_PATH}/${CONTAINER_NAME}:/config
       - /dockercache:/dockercache
       - /data:/data
       - /mnt:/mnt
