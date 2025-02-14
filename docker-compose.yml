@@ -13,7 +13,7 @@ services:
     volumes:
       - ${CONFIG_PATH}/${CONTAINER_NAME}:/config
       - /dockercache:/dockercache
-      - /data:/data
+      - /srv:/srv
       - /mnt:/mnt
       - /media:/media
     ports:
