@@ -1,6 +1,6 @@
 services:
   filezilla:
-    image: lscr.io/linuxserver/filezilla:latest
+    image: jlesage/filezilla:latest
     container_name: ${CONTAINER_NAME}
     network_mode: bridge
     cpu_shares: 1024
@@ -17,5 +17,5 @@ services:
       - /mnt:/mnt
       - /media:/media
     ports:
-      - ${PORT}:3000
+      - ${PORT1}:5800
     restart: unless-stopped
