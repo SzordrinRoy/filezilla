@@ -17,5 +17,5 @@ services:
       - /mnt:/mnt
       - /media:/media
     ports:
-      - ${PORT1}:5800
+      - ${PORT}:5800
     restart: unless-stopped
